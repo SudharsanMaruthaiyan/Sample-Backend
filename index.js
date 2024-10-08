@@ -5,11 +5,11 @@ const app = express()
 
 mongoose.connect("mongodb+srv://sudharsan6078:PqFs6JtYbReNcNUt@cluster.9nhfd.mongodb.net/crud")
 
-const UserSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     name:String,
     age:Number
-})
-const userModel = mongoose.model("emp", UserSchema)
+});
+const userModel = mongoose.model("emp", userSchema)
 
 const emp1 = new userModel({
     name:"sudharsan",
