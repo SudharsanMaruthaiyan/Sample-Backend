@@ -1,0 +1,18 @@
+{
+  "name": "sample-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev" :" nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "sudharsan",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0",
+    "nodemon": "^3.1.7",
+    "react-hook-form": "^7.53.0"
+  }
+}
