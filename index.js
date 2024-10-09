@@ -26,6 +26,15 @@ app.post("/", async (req,res)=>{
     }
 })
 
+app.get('/', async (req, res) => {
+    try {
+        const users = await Sample.find();
+        res.json(users);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+});
+
 
 app.listen(3000);
 
