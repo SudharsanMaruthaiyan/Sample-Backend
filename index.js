@@ -26,14 +26,14 @@ app.post("/", async (req,res)=>{
     }
 })
 
-app.get('/', async (req, res) => {
-    try {
+app.get("/", async (req,res)=>{
+    try{
         const users = await Sample.find();
-        res.json(users);
-    } catch (err) {
-        res.status(400).json({ message: err.message });
+        res.json(users)
+    }catch(e){
+        res.send(e);
     }
-});
+})
 
 
 app.listen(3000);
